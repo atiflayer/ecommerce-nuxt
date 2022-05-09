@@ -1,6 +1,7 @@
 <template>
-<div>
-  <Nav-bar />
+  <div>
+    <Nav />
+    <Products />
   </div>
 </template>
 
