@@ -1,18 +1,24 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark padding">
-    <NuxtLink class="navbar-brand" to="/">Ecommerce</NuxtLink>
+    <NuxtLink class="navbar-brand" to="/">
+      Ecommerce
+    </NuxtLink>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent">
-        <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon" />
     </button>
-    <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-                <NuxtLink to="/products" class="nav-link">Home <span class="sr-only">(current)</span></NuxtLink>
-            </li>
-            <li class="nav-item active">
-                <NuxtLink to="/my-items" class="nav-link">Product List <span class="sr-only">(current)</span></NuxtLink>
-            </li>
-        </ul>
+    <div id="navbarSupportedContent" class="collapse navbar-collapse ml-auto">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <NuxtLink to="/" class="nav-link">
+            Home <span class="sr-only">(current)</span>
+          </NuxtLink>
+        </li>
+        <li class="nav-item active">
+          <NuxtLink to="/list" class="nav-link">
+            List <span class="sr-only">(current)</span>
+          </NuxtLink>
+        </li>
+      </ul>
     </div>
   </nav>
 </template>
