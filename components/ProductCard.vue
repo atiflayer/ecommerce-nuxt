@@ -4,9 +4,9 @@
     <h5 class="header">
       {{ product.title }}
     </h5>
-    <p class="snippet">
+    <!-- <p class="snippet">
       Product ID : {{ product.id }}
-    </p>
+    </p> -->
     <p class="snippet">
       Rating : {{ product.rating.rate }}
     </p>

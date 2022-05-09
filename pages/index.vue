@@ -1,6 +1,7 @@
 <template>
   <div>
     <Nav />
+    <ProductGrid />
     <ProductsLatest />
     <ProductsPopular />
     <ProductsLowest />

@@ -7,12 +7,29 @@
     <p class="snippet">
       Latest Products displayed here.
     </p>
-    <div v-if="products" class="cards-container">
-      <ProductCard
-        v-for="product in products"
-        :key="product.id"
-        :product="product"
-      />
+    <div
+      v-for="product in products"
+      :key="product.id"
+      :product="product"
+      class="cards-container"
+    >
+      <b-card
+        :title="product.title"
+        img-src="https://picsum.photos/600/300/?image=25"
+        img-alt="Image"
+        img-top
+        tag="article"
+        style="max-width: 20rem;"
+        class="mb-2"
+      >
+        <b-card-text>
+          {{ product.title }}...
+        </b-card-text>
+
+        <b-button href="#" variant="primary">
+          Go somewhere
+        </b-button>
+      </b-card>
     </div>
   </div>
 </template>
@@ -50,4 +67,12 @@ export default {
         justify-content: space-between;
     }
 
+    .product-card {
+        margin-top: 1.5rem;
+        height: 4rem;
+        display: flex;
+    }
+    .text-container {
+        margin-left: 2rem
+    }
 </style>
